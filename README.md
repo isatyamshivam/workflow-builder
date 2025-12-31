@@ -21,9 +21,14 @@ A visual workflow builder application built with React. Create, edit, and manage
 
 ### Bonus Features
 - **Undo/Redo**: Full history support with keyboard shortcuts (Ctrl+Z / Ctrl+Y)
-- **Save to Console**: Export workflow data structure to browser console
+- **Save Workflow**: Export workflow as a downloadable JSON file (Ctrl+S)
+- **Load Workflow**: Import previously saved workflow files (Ctrl+O)
 - **Reset Workflow**: Clear all nodes and start fresh
-- **Keyboard Shortcuts**: Ctrl+S to save, Ctrl+Z/Y for undo/redo
+- **Keyboard Shortcuts**: 
+  - `Ctrl+S` - Save workflow to file
+  - `Ctrl+O` - Load workflow from file
+  - `Ctrl+Z` - Undo
+  - `Ctrl+Y` / `Ctrl+Shift+Z` - Redo
 
 ## Technology Stack
 
@@ -113,8 +118,29 @@ src/
 5. **Delete Nodes**: Click the "×" button on any node (except Start)
 6. **Branch Logic**: Branch nodes have True/False branches - add nodes to either branch
 7. **Undo/Redo**: Use toolbar buttons or Ctrl+Z/Ctrl+Y
-8. **Save**: Click Save to log the workflow data to the console
+8. **Save**: Click Save button or press Ctrl+S to download workflow as JSON file
+9. **Load**: Click Load button or press Ctrl+O to import a saved workflow file
 
 ## License
 
-MIT
+MIT License
+
+Copyright (c) 2025 isatyamshivam
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
